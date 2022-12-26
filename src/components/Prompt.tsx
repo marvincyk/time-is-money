@@ -20,7 +20,7 @@ const Prompt = ({
 	return (
 		<form onSubmit={handleSubmit}>
 			<FormControl display="flex" flexDir="column" alignItems="center">
-				<FormLabel fontSize="6xl" whiteSpace="nowrap">
+				<FormLabel fontSize={{ base: "3xl", md: "6xl" }} whiteSpace="nowrap">
 					What is your salary?
 				</FormLabel>
 				<InputGroup>
