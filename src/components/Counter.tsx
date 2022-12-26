@@ -19,7 +19,7 @@ const Counter = ({ salary }: CounterProps) => {
 	}, [count, salary]);
 
 	return (
-		<Text fontSize="6xl">{`$ ${parseFloat(
+		<Text fontSize={{ base: "3xl", md: "6xl" }}>{`$ ${parseFloat(
 			count.toFixed(2)
 		).toLocaleString()}`}</Text>
 	);
