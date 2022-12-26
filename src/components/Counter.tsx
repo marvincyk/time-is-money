@@ -18,6 +18,10 @@ const Counter = ({ salary }: CounterProps) => {
 		return () => clearInterval(interval);
 	}, [count, salary]);
 
-	return <Text fontSize="6xl">{`$ ${count.toFixed(2)}`}</Text>;
+	return (
+		<Text fontSize="6xl">{`$ ${parseFloat(
+			count.toFixed(2)
+		).toLocaleString()}`}</Text>
+	);
 };
 export default Counter;
