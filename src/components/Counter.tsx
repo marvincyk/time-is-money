@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Text } from "@chakra-ui/react";
+import { Text, Fade } from "@chakra-ui/react";
 
 interface CounterProps {
 	salary: number;
@@ -19,9 +19,11 @@ const Counter = ({ salary }: CounterProps) => {
 	}, [count, salary]);
 
 	return (
-		<Text fontSize={{ base: "3xl", md: "6xl" }}>{`$ ${parseFloat(
-			count.toFixed(2)
-		).toLocaleString()}`}</Text>
+		<Fade in>
+			<Text fontSize={{ base: "3xl", md: "6xl" }}>{`$ ${parseFloat(
+				count.toFixed(2)
+			).toLocaleString()}`}</Text>
+		</Fade>
 	);
 };
 export default Counter;
