@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Link, Text } from "@chakra-ui/react";
 
 interface LayoutProps {
 	children?: React.ReactNode;
@@ -16,6 +16,12 @@ const Layout = ({ children }: LayoutProps) => {
 			minH="100vh"
 		>
 			{children}
+			<Text position="absolute" bottom={2}>
+				{`©️ ${new Date().getFullYear()} `}
+				<Link href="https://marvincyk.com/" isExternal>
+					Marvin Chew
+				</Link>
+			</Text>
 		</Box>
 	);
 };
