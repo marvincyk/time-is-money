@@ -5,7 +5,7 @@ import {
 	InputGroup,
 	InputLeftElement,
 } from "@chakra-ui/react";
-import { Fade } from "@chakra-ui/react";
+import { Fade } from "react-awesome-reveal";
 
 interface PromptProps {
 	onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
@@ -19,7 +19,7 @@ const Prompt = ({
 	salary,
 }: PromptProps) => {
 	return (
-		<Fade in>
+		<Fade duration={3000}>
 			<form onSubmit={handleSubmit}>
 				<FormControl
 					display="flex"
