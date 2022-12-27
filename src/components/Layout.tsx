@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
 	return (
 		<Box
-			bg="black"
+			bgGradient="radial(#C33764, #1D2671)"
 			color="white"
 			display="flex"
 			justifyContent="center"
